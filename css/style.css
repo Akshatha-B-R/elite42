@@ -5,24 +5,28 @@
 
 ul.parent {
   display: flex;
-  list-style: none;
-  justify-content: center;
-  background-color: green;
+  list-style-type: none;
+  justify-content: flex-end;
+  background-color: grey;
+  padding: 5px;
+}
+ul.parent li {
   position: relative;
 }
 ul.parent li a {
-  padding: 5px;
+  padding: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
+  cursor: pointer;
 }
 ul.parent li a:hover {
   color: red;
 }
 ul.parent li ul {
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 24px;
   display: none;
   list-style: none;
   background-color: gray;
@@ -30,4 +34,21 @@ ul.parent li ul {
 }
 ul.parent li:hover ul {
   display: block;
+}
+
+.content .products li {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: gainsboro;
+  position: relative;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: gray;
+  color: #fff;
+  height: 14px;
 }/*# sourceMappingURL=style.css.map */
